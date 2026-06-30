@@ -1,12 +1,25 @@
 const navToggle = document.querySelector('.nav-toggle');
-const navLinks = document.querySelector('.nav-links');
+const nav = document.querySelector('.main-nav');
 
-navToggle.addEventListener('click', () => {
-  navLinks.classList.toggle('active');
+navToggle?.addEventListener('click', () => {
+  const open = nav.classList.toggle('open');
+  navToggle.setAttribute('aria-expanded', open ? 'true' : 'false');
 });
 
-document.querySelectorAll('.nav-links a').forEach((link) => {
-  link.addEventListener('click', () => navLinks.classList.remove('active'));
+document.querySelectorAll('.main-nav a').forEach(link => {
+  link.addEventListener('click', () => {
+    nav.classList.remove('open');
+    navToggle?.setAttribute('aria-expanded', 'false');
+  });
 });
 
-document.getElementById('year').textContent = new Date().getFullYear();
+const observer = new IntersectionObserver((entries) => {
+  entries.forEach(entry => {
+    if (entry.isIntersecting) {
+      entry.target.classList.add('visible');
+      observer.unobserve(entry.target);
+    }
+  });
+}, { threshold: 0.12 });
+
+document.querySelectorAll('.reveal').forEach(el => observer.observe(el));
