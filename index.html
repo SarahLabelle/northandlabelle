@@ -3,185 +3,236 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>North & Labelle Home Care | Luxury Cleaning Services</title>
-  <meta name="description" content="North & Labelle Home Care offers detailed home cleaning, deep cleaning, move-in/move-out cleaning, fridge resets, pantry organization, and office cleaning in London, St. Thomas, Port Stanley, and surrounding areas." />
-  <meta name="theme-color" content="#64735b" />
-  <link rel="preconnect" href="https://images.unsplash.com">
+
+  <title>North & Labelle | Luxury Home Cleaning</title>
+  <meta name="description" content="Luxury home cleaning, move-in/move-out cleaning, deep cleaning, fridge resets, pantry organization, and home care in London, St. Thomas, Port Stanley, and surrounding areas." />
+
   <link rel="stylesheet" href="style.css" />
 </head>
+
 <body>
-  <header class="site-header" id="top">
-    <a class="brand" href="#top" aria-label="North & Labelle Home Care home">
-      <img src="assets/north-labelle-logo.png" alt="North & Labelle Home Care logo" />
-    </a>
+  <header class="header">
+    <nav class="nav">
+      <a href="#" class="logo-wrap">
+        <img src="assets/north-labelle-logo.png" alt="North & Labelle logo" class="logo" />
+        <div class="brand-text">
+          <strong>North & Labelle</strong>
+          <span>Home Care & Cleaning</span>
+        </div>
+      </a>
 
-    <button class="nav-toggle" aria-label="Open navigation" aria-expanded="false">☰</button>
+      <button class="mobile-toggle" id="mobileToggle">☰</button>
 
-    <nav class="main-nav" aria-label="Main navigation">
-      <a href="#services">Services</a>
-      <a href="#about">About</a>
-      <a href="#pricing">Pricing</a>
-      <a href="#checklist">Checklist</a>
-      <a href="#faq">FAQ</a>
-      <a href="#contact">Contact</a>
+      <div class="nav-links" id="navLinks">
+        <a href="#services">Services</a>
+        <a href="#process">Our Process</a>
+        <a href="#pricing">Pricing</a>
+        <a href="#contact">Contact</a>
+        <a href="tel:4164003505" class="btn">Call 416-400-3505</a>
+      </div>
     </nav>
-
-    <div class="header-contact">
-      <a href="tel:14164003505">416-400-3505</a>
-      <a href="mailto:sarah@northandlabelle.com">sarah@northandlabelle.com</a>
-      <a class="btn btn-small" href="#contact">Book Now</a>
-    </div>
   </header>
 
   <main>
     <section class="hero">
-      <div class="hero-copy reveal">
-        <p class="eyebrow">Your home. Our care.</p>
-        <h1>A cleaner home for a calmer life.</h1>
-        <p class="hero-text">North & Labelle Home Care provides polished, detail-focused cleaning and home reset services for London, St. Thomas, Port Stanley, and surrounding areas.</p>
-        <div class="hero-actions">
-          <a class="btn" href="#contact">Book Your Clean</a>
-          <a class="btn btn-outline" href="#services">Our Services</a>
-        </div>
-      </div>
-      <div class="hero-image reveal" aria-label="Bright clean living room with soft green home decor"></div>
-    </section>
-
-    <section class="intro band">
-      <p class="eyebrow">What we offer</p>
-      <h2>Home care services designed around real life.</h2>
-      <p>Regular upkeep, deep resets, moving cleans, and the kind of fridge/pantry rescue mission nobody admits they need until the lettuce has evolved into soup.</p>
-    </section>
-
-    <section class="services" id="services">
-      <article class="service-card reveal">
-        <span class="icon">⌂</span>
-        <h3>Standard Cleaning</h3>
-        <p>Routine cleaning for kitchens, bathrooms, living areas, bedrooms, surfaces, floors, and general upkeep.</p>
-      </article>
-      <article class="service-card reveal">
-        <span class="icon">✦</span>
-        <h3>Deep Cleaning</h3>
-        <p>A more detailed reset for built-up dust, grime, baseboards, appliances, fixtures, and neglected corners.</p>
-      </article>
-      <article class="service-card reveal">
-        <span class="icon">▣</span>
-        <h3>Move-In / Move-Out</h3>
-        <p>A full clean before settling in or handing over keys, because moving is already enough human punishment.</p>
-      </article>
-      <article class="service-card reveal">
-        <span class="icon">▤</span>
-        <h3>Fridge Reset</h3>
-        <p>Fridge clean-out, wipe-down, organization, expired item purge, and a fresh-start setup.</p>
-      </article>
-      <article class="service-card reveal">
-        <span class="icon">▥</span>
-        <h3>Pantry Organization</h3>
-        <p>Sorting, wiping shelves, grouping items, and creating a pantry that does not look like raccoons packed it.</p>
-      </article>
-      <article class="service-card reveal">
-        <span class="icon">▦</span>
-        <h3>Office Cleaning</h3>
-        <p>Clean, organized, professional spaces for small offices, studios, and work-from-home setups.</p>
-      </article>
-    </section>
-
-    <section class="split" id="about">
-      <div class="split-image reveal"></div>
-      <div class="split-copy reveal">
-        <p class="eyebrow">Why choose us</p>
-        <h2>We treat your home like it matters.</h2>
-        <p>North & Labelle Home Care is built around calm, reliable, detailed service. The goal is simple: leave every space cleaner, fresher, and easier to live in.</p>
-        <ul class="check-list">
-          <li>Reliable scheduling</li>
-          <li>Detail-focused cleaning</li>
-          <li>Eco-conscious product options</li>
-          <li>Move-in and move-out ready</li>
-          <li>Personalized home reset services</li>
-        </ul>
-        <a class="btn" href="#contact">Get a Quote</a>
-      </div>
-    </section>
-
-    <section class="pricing band" id="pricing">
-      <p class="eyebrow">Simple starting rates</p>
-      <h2>Standard cleaning estimates</h2>
-      <div class="price-grid">
-        <article class="price-card reveal"><h3>1 Bedroom</h3><p>Starting at</p><strong>$120</strong><span>Flat rate estimate</span></article>
-        <article class="price-card reveal"><h3>2 Bedrooms</h3><p>Starting at</p><strong>$150</strong><span>Flat rate estimate</span></article>
-        <article class="price-card reveal"><h3>3 Bedrooms</h3><p>Starting at</p><strong>$180</strong><span>Flat rate estimate</span></article>
-        <article class="price-card reveal"><h3>4 Bedrooms</h3><p>Starting at</p><strong>$210</strong><span>Flat rate estimate</span></article>
-        <article class="price-card reveal"><h3>5+ Bedrooms</h3><p>Custom quote</p><strong>Contact</strong><span>Personalized rate</span></article>
-      </div>
-      <p class="fine-print">Final pricing may vary based on square footage, home condition, pets, add-ons, and frequency.</p>
-    </section>
-
-    <section class="checklist" id="checklist">
-      <div class="section-heading reveal">
-        <p class="eyebrow">Cleaning checklist</p>
-        <h2>What we can cover</h2>
-      </div>
-      <div class="check-columns">
-        <div class="check-box reveal"><h3>Kitchen</h3><ul><li>Counters and backsplash</li><li>Sink and faucet</li><li>Exterior appliances</li><li>Cabinet fronts</li><li>Floors and garbage area</li></ul></div>
-        <div class="check-box reveal"><h3>Bathrooms</h3><ul><li>Toilets, tubs, showers</li><li>Mirrors and fixtures</li><li>Vanities and sinks</li><li>High-touch surfaces</li><li>Floors and baseboards</li></ul></div>
-        <div class="check-box reveal"><h3>Living Areas</h3><ul><li>Dusting surfaces</li><li>Vacuuming and mopping</li><li>Light organization</li><li>Glass and mirrors</li><li>General reset</li></ul></div>
-      </div>
-    </section>
-
-    <section class="cta-strip">
       <div>
-        <p class="eyebrow">Ready for a cleaner home?</p>
-        <h2>Book a calm, polished reset.</h2>
-      </div>
-      <a class="btn btn-light" href="#contact">Book Your Clean</a>
-    </section>
+        <div class="kicker">Luxury cleaning · Home resets · Organization</div>
+        <h1>A cleaner home, handled properly.</h1>
+        <p>
+          North & Labelle provides detailed home cleaning, move-in and move-out cleans,
+          deep cleaning, fridge resets, pantry organization, and thoughtful home care
+          for busy households.
+        </p>
 
-    <section class="faq" id="faq">
-      <div class="section-heading reveal">
-        <p class="eyebrow">FAQ</p>
-        <h2>Questions people ask before handing over the keys.</h2>
-      </div>
-      <div class="faq-list">
-        <details class="reveal"><summary>Do you bring supplies?</summary><p>We can bring supplies, or use your preferred products if you have specific needs.</p></details>
-        <details class="reveal"><summary>Do you do move-out cleans?</summary><p>Yes. Move-in and move-out cleans are one of the main services.</p></details>
-        <details class="reveal"><summary>What areas do you serve?</summary><p>London, St. Thomas, Port Stanley, and surrounding areas.</p></details>
-        <details class="reveal"><summary>How do I get a quote?</summary><p>Use the form below, call 416-400-3505, or email sarah@northandlabelle.com.</p></details>
-      </div>
-    </section>
-
-    <section class="contact" id="contact">
-      <div class="contact-copy reveal">
-        <p class="eyebrow">Book North & Labelle</p>
-        <h2>Tell us what your home needs.</h2>
-        <p>Send the basics and Sarah will follow up with availability and pricing.</p>
-        <div class="contact-links">
-          <a href="tel:14164003505">416-400-3505</a>
-          <a href="mailto:sarah@northandlabelle.com">sarah@northandlabelle.com</a>
+        <div class="hero-actions">
+          <a href="#contact" class="btn">Book a Cleaning</a>
+          <a href="mailto:sarah@northandlabelle.com" class="btn light">Email Sarah</a>
         </div>
       </div>
-      <form class="quote-form reveal" action="mailto:sarah@northandlabelle.com" method="post" enctype="text/plain">
-        <label>Name<input type="text" name="name" required></label>
-        <label>Phone<input type="tel" name="phone" required></label>
-        <label>Email<input type="email" name="email"></label>
-        <label>Service Needed<select name="service"><option>Standard Cleaning</option><option>Deep Cleaning</option><option>Move-In / Move-Out</option><option>Fridge Reset</option><option>Pantry Organization</option><option>Office Cleaning</option></select></label>
-        <label>Details<textarea name="details" rows="5" placeholder="Bedrooms, bathrooms, location, pets, preferred date, and anything terrifying in the fridge."></textarea></label>
-        <button class="btn" type="submit">Send Request</button>
-      </form>
+
+      <div class="hero-card">
+        <div class="hero-image"></div>
+        <div class="floating-card">
+          <strong>Premium home care</strong>
+          <span>Serving London, St. Thomas, Port Stanley, and surrounding areas.</span>
+        </div>
+      </div>
+    </section>
+
+    <section class="section services" id="services">
+      <div class="section-inner">
+        <div class="section-title">
+          <div class="kicker">Services</div>
+          <h2>Detailed cleaning without the rushed-job nonsense.</h2>
+          <p>
+            Built for people who want their home to feel calm, fresh, and reset,
+            not just “technically wiped.” Humanity survives another chore.
+          </p>
+        </div>
+
+        <div class="grid three">
+          <div class="card">
+            <div class="card-icon">01</div>
+            <h3>Standard Cleaning</h3>
+            <p>Routine home cleaning for kitchens, bathrooms, floors, dusting, surfaces, and general upkeep.</p>
+          </div>
+
+          <div class="card">
+            <div class="card-icon">02</div>
+            <h3>Deep Cleaning</h3>
+            <p>More detailed cleaning for built-up dust, grime, neglected corners, baseboards, and high-touch areas.</p>
+          </div>
+
+          <div class="card">
+            <div class="card-icon">03</div>
+            <h3>Move-In / Move-Out</h3>
+            <p>A full reset for empty or nearly-empty homes, apartments, rentals, and listings.</p>
+          </div>
+
+          <div class="card">
+            <div class="card-icon">04</div>
+            <h3>Fridge Reset</h3>
+            <p>Fridge purge, wipe-down, sorting, expired food removal, and a clean setup that no longer looks cursed.</p>
+          </div>
+
+          <div class="card">
+            <div class="card-icon">05</div>
+            <h3>Pantry Organization</h3>
+            <p>Sorting, grouping, wiping, organizing, and making your pantry look intentional instead of feral.</p>
+          </div>
+
+          <div class="card">
+            <div class="card-icon">06</div>
+            <h3>Small Office Cleaning</h3>
+            <p>Light commercial cleaning for small studios, offices, workspaces, and client-facing rooms.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="process">
+      <div class="section-inner split">
+        <div class="image-panel"></div>
+
+        <div>
+          <div class="kicker">Our Process</div>
+          <h2>A proper home reset.</h2>
+          <p>
+            Every home is different, so North & Labelle focuses on the details that make
+            the biggest difference: visible surfaces, hidden dust, kitchens, bathrooms,
+            floors, and the little things people pretend they don’t notice.
+          </p>
+
+          <div class="checklist">
+            <div class="check"><b>✓</b> Kitchen surfaces, sinks, counters, and appliance fronts</div>
+            <div class="check"><b>✓</b> Bathrooms, mirrors, fixtures, tubs, showers, and toilets</div>
+            <div class="check"><b>✓</b> Dusting, baseboards, floors, vacuuming, and mopping</div>
+            <div class="check"><b>✓</b> Optional fridge, pantry, and organization add-ons</div>
+            <div class="check"><b>✓</b> Move-in and move-out cleaning available</div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section pricing" id="pricing">
+      <div class="section-inner">
+        <div class="section-title">
+          <div class="kicker">Pricing</div>
+          <h2>Simple starting options.</h2>
+          <p>
+            Final pricing depends on home size, condition, pets, add-ons, and how badly
+            life has attacked the place.
+          </p>
+        </div>
+
+        <div class="grid three">
+          <div class="price-card">
+            <h3>Standard Clean</h3>
+            <div class="price">Quote</div>
+            <p>Best for regular upkeep and maintenance cleaning.</p>
+            <ul>
+              <li>Kitchens</li>
+              <li>Bathrooms</li>
+              <li>Floors</li>
+              <li>Dusting</li>
+            </ul>
+          </div>
+
+          <div class="price-card featured">
+            <h3>Deep Clean</h3>
+            <div class="price">Quote</div>
+            <p>Best for homes that need more detail and more time.</p>
+            <ul>
+              <li>Baseboards</li>
+              <li>Detailed surfaces</li>
+              <li>Built-up grime</li>
+              <li>High-touch areas</li>
+            </ul>
+          </div>
+
+          <div class="price-card">
+            <h3>Move Clean</h3>
+            <div class="price">Quote</div>
+            <p>Best for moving in, moving out, rentals, and listings.</p>
+            <ul>
+              <li>Empty home reset</li>
+              <li>Inside cabinets</li>
+              <li>Bathrooms</li>
+              <li>Kitchen detail</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section contact" id="contact">
+      <div class="section-inner">
+        <div class="section-title">
+          <div class="kicker">Contact</div>
+          <h2>Book a cleaning.</h2>
+          <p>
+            Send Sarah the basics and she’ll follow up with availability and pricing.
+          </p>
+        </div>
+
+        <div class="contact-grid">
+          <div class="contact-box">
+            <h3>North & Labelle Home Care</h3>
+            <p><strong>Phone:</strong><br><a href="tel:4164003505">416-400-3505</a></p>
+            <p><strong>Email:</strong><br><a href="mailto:sarah@northandlabelle.com">sarah@northandlabelle.com</a></p>
+            <p><strong>Service Areas:</strong><br>London, St. Thomas, Port Stanley, and surrounding areas.</p>
+          </div>
+
+          <div class="contact-box">
+            <form class="form" action="https://formspree.io/f/YOUR_FORM_ID" method="POST">
+              <input type="text" name="name" placeholder="Your name" required />
+              <input type="email" name="email" placeholder="Your email" required />
+              <input type="tel" name="phone" placeholder="Phone number" />
+
+              <select name="service" required>
+                <option value="">What service do you need?</option>
+                <option>Standard Cleaning</option>
+                <option>Deep Cleaning</option>
+                <option>Move-In / Move-Out</option>
+                <option>Fridge Reset</option>
+                <option>Pantry Organization</option>
+                <option>Small Office Cleaning</option>
+              </select>
+
+              <textarea name="message" placeholder="Tell us about the home, size, condition, pets, preferred date, etc."></textarea>
+
+              <button type="submit" class="btn">Send Request</button>
+            </form>
+          </div>
+        </div>
+      </div>
     </section>
   </main>
 
-  <footer class="site-footer">
-    <div class="footer-brand">
-      <img src="assets/north-labelle-logo.png" alt="North & Labelle Home Care logo" />
-      <p>Your home. Our care.</p>
-    </div>
-    <div>
-      <h3>Serving</h3>
-      <p>London<br>St. Thomas<br>Port Stanley<br>Surrounding areas</p>
-    </div>
-    <div>
-      <h3>Contact</h3>
-      <p><a href="tel:14164003505">416-400-3505</a><br><a href="mailto:sarah@northandlabelle.com">sarah@northandlabelle.com</a></p>
+  <footer class="footer">
+    <div class="footer-inner">
+      <span>© 2026 North & Labelle Home Care</span>
+      <span>Luxury cleaning · Home resets · Organization</span>
     </div>
   </footer>
 
